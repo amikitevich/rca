@@ -19,8 +19,6 @@ class Board extends React.Component {
     }
     squares[i] = this.props.xIsNext ? 'X' : 'O';
     this.setState({ squares, xIsNext: !this.props.xIsNext });
-    console.log(arguments, 'arsg');
-    console.log(this, 'board');
   }
 
   renderSquare(i) {
